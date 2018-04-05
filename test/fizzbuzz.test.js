@@ -1,12 +1,17 @@
 import chai from 'chai';
+
+import fizzbuzz from '../fizzbuzz';
+
 const expect = chai.expect();
+
 
 describe('fizzbuzz', () => {
   it('must receive a number as input', () => {
+    console.log('a check',fizzbuzz())
     expect(fizzBuzz('pppp')).to.equal('Please enter a number')
   })
   it('should return fizz for 3 and multiples of 3', () => {
-    expect(fizzBuzz(9)).to.equal('fizz');
+    expect(fizzBuzz.fizzBuzz(9)).to.equal('fizz');
   });
   it('should return buzz for 5 and multiples of 5', () => {
     expect(fizzBuzz(10)).to.equal('buzz');
