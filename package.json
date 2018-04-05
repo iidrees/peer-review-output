@@ -1,0 +1,38 @@
+{
+  "name": "peer-review-output",
+  "version": "1.0.0",
+  "description": "It shows how I write code following the TDD workflow, get peer reviewed and ask for and get ASK feedback.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iidrees/peer-review-output.git"
+  },
+  "keywords": [
+    "TDD",
+    "nodejs",
+    "mocha",
+    "chai",
+    "jasmine"
+  ],
+  "author": "Idrees Ibraheem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iidrees/peer-review-output/issues"
+  },
+  "homepage": "https://github.com/iidrees/peer-review-output#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.19.1"
+  }
+}
