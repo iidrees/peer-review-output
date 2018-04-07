@@ -24,6 +24,9 @@ describe('FIND THE DIVISIBILITY OF NUMBERS', () => {
     multiple of 3 or 5', () => {
     assert.deepEqual(FizzBuzz(26), 26)
   });
+  it('should return number when user a enter a float number', () => {
+    assert.deepEqual(FizzBuzz(4.3), 4.3)
+  })
   it('should return a message when the user input is null or undefined', () => {
     assert.deepEqual(FizzBuzz(" "), 'Please enter a number')
   });
