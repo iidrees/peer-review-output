@@ -1,31 +1,30 @@
-import chai from 'chai';
+import { assert } from 'chai';
 
-import fizzbuzz from '../fizzbuzz';
-
-const expect = chai.expect();
+import  FizzBuzz  from '../fizzbuzz';
 
 
-describe('fizzbuzz', () => {
-  it('must receive a number as input', () => {
-    console.log('a check',fizzbuzz())
-    expect(fizzBuzz('pppp')).to.equal('Please enter a number')
+describe('FIND THE DIVISIBILITY OF NUMBERS', () => {
+  it('should request for a number as input when user enters string', () => {
+   assert.deepEqual(FizzBuzz('ppp'), 'Please enter a number')
   })
-  it('should return fizz for 3 and multiples of 3', () => {
-    expect(fizzBuzz.fizzBuzz(9)).to.equal('fizz');
+  it('should return fizz when user enters 9 a multiple of 3 as input ', () => {
+    assert.deepEqual(FizzBuzz(9), 'fizz')
   });
-  it('should return buzz for 5 and multiples of 5', () => {
-    expect(fizzBuzz(10)).to.equal('buzz');
+  it('should return buzz when user enters 10 a multiples of 5 as input', () => {
+    assert.deepEqual(FizzBuzz(10), 'buzz')
   });
-  it('should return fizzbuzz for multiples of both 3 and 5', () => {
-    expect(fizzBuzz(30)).to.equal('fizzbuzz');
+  it('should return fizzbuzz when a user enters a number that is both multiples\
+   of 3 and 5', () => {
+    assert.deepEqual(FizzBuzz(30), 'FizzBuzz')
   });
-  it('should return a message if the number is negative', () => {
-    expect(fizzBuzz(-9)).to.equal('Number must be positive');
+  it('should return a message when user enters a negative integer', () => {
+    assert.deepEqual(FizzBuzz(-9), 'Number must be positive')
   });
-  it('should return number if number is not a multiple of 3 or 5', () => {
-    expect(fizzBuzz(26)).to.equal(26);
+  it('should return number when user enters a number that is not a\
+    multiple of 3 or 5', () => {
+    assert.deepEqual(FizzBuzz(26), 26)
   });
-  it('should return a message if the number is null or undefined', () => {
-    expect(fizzBuzz()).to.equal('Must be a number');
+  it('should return a message when the user input is null or undefined', () => {
+    assert.deepEqual(FizzBuzz(" "), 'Please enter a number')
   });
 })
